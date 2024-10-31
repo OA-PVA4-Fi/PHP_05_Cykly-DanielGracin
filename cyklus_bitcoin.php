@@ -10,7 +10,8 @@
  * b) Jaká byla průměrná roční cena BTC?
  * c) Jaká je hodnota Vašeho portfólia v USD a CZK?
  * d) Vypočítejte KPI ukazatele portfólia - průměrnou, minimální, maximulní nákupní cenu ve svém portfóliu.
- * e) Spočítejte, alternativní strategii. Pokud by nákupní cena byla pod Vaši průměrné aktuální nákupní cenou, koupili by jste vždy dvojnásobek BTC. Kolik budete mít koupených BTC a jak se změní KPI ukazatele?
+ * e) Spočítejte, alternativní strategii. Pokud by nákupní cena byla pod Vaši průměrné aktuální nákupní cenou,
+ *  koupili by jste vždy dvojnásobek BTC. Kolik budete mít koupených BTC a jak se změní KPI ukazatele?
  *
  */
 
@@ -149,4 +150,11 @@ $marketData = [
 
 // reseni:
 
+$BTC = 0;
+
+for ($bitcoinPrices) {
+    $BTC += $bitcoinPrices;
+}
+
+echo 'Vlastníme:' . $BTC . 'BTC';
 ?>

@@ -7,6 +7,29 @@
 */
 
 //reseni
+echo'<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>';
+$months = array('Leden', 'Únor', 'Březen', 'Duben', 'Květen', 'Červen', 'Červenec', 'Srpen', 'Září', 'Říjen', 'Listopad', 'Prosinec');
+
+foreach ($months as $hodnota) {
+    echo $hodnota . "<br />";
+}
+
+echo'<br>';
+
+for ($i = 5; $i < 12 ; $i++) {
+    echo $months[$i] . '<br />';
+}
+
+echo'</body>
+</html>';
+
 
 ?>
 

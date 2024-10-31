@@ -19,4 +19,14 @@ $cars = array (
 
 //reseni
 
+$prodané = 0;
+$sklad = 0;
+
+foreach ($cars as $car) {
+	$prodané += $car[1];
+	$sklad += $car[2];	
+}
+
+echo 'Prodaných máme: ' . $prodané . ' a na skladě jich máme: ' . $sklad;
+
 ?>
